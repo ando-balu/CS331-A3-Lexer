@@ -29,7 +29,8 @@ end
 
 ### Lexit Flow Chart
 
-![Lexit Flow Chart](https://github.com/user-attachments/assets/145acf9c-d61e-480d-ab3b-0ccc9c62732e)
+![Lexit Flow Chart](https://github.com/user-attachments/assets/1d86291b-627c-4977-bdf5-29590c19a637)
+
 
 ## Lexeme Specification
 
