@@ -50,13 +50,13 @@ There are seven lexeme categories: **Keyword**, **Identifier**, **NumericLiteral
 
 *Below, in a regular expression, a character preceded by a backslash means the literal character, with no special meaning.*
 
-### **Keyword**
+### Keyword
 
 One of the following 16:
 
 `and`  `char`  `def`  `else`  `elseif`  `eol`  `false`  `if`  `inputnum` `not`  `or`  `output`  `rand`  `return`  `true`  `while`
 
-### **Identifier**
+### Identifier
 
 Any string matched by `/[a-zA-Z_][a-zA-Z_0-9]*/` that is not a **Keyword**.
 
@@ -66,7 +66,7 @@ Here are some Identifier lexemes.
 
 *Note. The reserved words are the same as the **Keyword** lexemes.*
 
-### **NumericLiteral**
+### NumericLiteral
 
 Any string matched by `/[0-9]+([eE]\+?[0-9]+)?/`.
 
@@ -80,7 +80,7 @@ The following are *not* valid **NumericLiteral** lexemes.
 
 `-42`   `3e`   `e`   `123E+`   `1.23`   `123e-7`
 
-### **StringLiteral**
+### StringLiteral
 
 A single quote (') or double quote ("), followed by zero or more characters that are not newlines or the same as the opening quote mark, followed by a quote that matches the opening quote mark. There are no escape sequences. Any character, legal or illegal, other than a newline or a quote that matches the opening quote mark, may appear inside a **StringLiteral**. The beginning and ending quote marks are both part of the lexeme.
 
@@ -88,13 +88,13 @@ Here are some **StringLiteral** lexemes.
 
 `"Hello there!"`   `''`   `'"'`   `"'--#!Ωé\"`
 
-### **Operator**
+### Operator
 
 One of the following fourteen:
 
 `==`   `!=`   `<`   `<=`   `>`   `>=`   `+`   `-`   `*`   `/`   `%`   `[`   `]`   `=`
 
-### **Punctuation**
+### Punctuation
 
 Any single legal character that is not whitespace, not part of a comment, and not part of any valid lexeme in one of the other categories, including **Malformed**.
 
@@ -102,7 +102,7 @@ Here are some **Punctuation** lexemes.
 
 `;`   `(`   `)`   `{`   `}`   `,`   `&`   `$`
 
-### **Malformed**
+### Malformed
 
 There are two kinds of **Malformed** lexemes: *bad character* and *bad string*.
 
